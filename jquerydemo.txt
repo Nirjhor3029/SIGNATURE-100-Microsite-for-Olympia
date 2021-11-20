@@ -1,0 +1,11 @@
+https://www.jqueryscript.net/animation/Content-Flip-Plugin-BookBlock.html
+
+https://www.jqueryscript.net/animation/App-like-Page-Transition-Effects-With-jQuery-CSS3-Nice-Screen.html
+
+https://www.jqueryscript.net/animation/Diagonal-Section-Transition-Effect-with-jQuery-Animation-Simple-Ascensor.html
+
+https://appleple.github.io/lookforward/
+
+https://www.jqueryscript.net/animation/smooth-page-transitions-lookforward.html
+
+https://www.jqueryscript.net/animation/Smooth-Single-Page-Transition-Effects-Using-jQuery-CSS3-page-js.html

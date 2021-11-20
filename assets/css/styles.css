@@ -1,0 +1,255 @@
+:root {
+    --color-primary: #1f5c00;
+    --color-secondary: #9fce17;
+
+    --color-btn-primary: #3eb715;
+    --color-btn-secondary: #8cdc27;
+}
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+#viewport {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.animation-smooth {
+    transition: all 1s;
+}
+
+.hide {
+    display: none !important;
+    /* transform: scale(0); */
+    /* opacity: 0; */
+}
+
+.screen {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+.bg-img-config {
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Section-1 envelope */
+.envelope-page {
+    /* background-image: url("/assets/images/bgs/Home.png"); */
+}
+/* Section-2 home-page */
+.home-page-bg {
+    /* z-index: 100; */
+    background-image: url("../images/bgs/home.png");
+}
+
+/* Section-3  */
+.forest-page-bg {
+    background-image: url("../images/bgs/forest_based_materials.png");
+}
+/* Section-4  */
+.fsc-page-bg {
+    background-image: url("../images/bgs/fsctm_certified.png");
+}
+/* Section-5  */
+.aluminum-free-page-bg {
+    background-image: url("../images/bgs/aluminum-free.png");
+}
+/* Section-6  */
+.co2-page-bg {
+    background-image: url("../images/bgs/co2_reduction.png");
+}
+/* Section-7  */
+.recyclable-page-bg {
+    background-image: url("../images/bgs/fully_recyclable.png");
+}
+
+/* Section paddings */
+.forest-page .content {
+    padding: 10% 10% 10% 40%;
+}
+.fsc-page .content {
+    padding: 10% 10% 10% 40%;
+}
+.aluminum-free-page .content {
+    padding: 10% 40% 10% 10%;
+}
+.co2-page .content {
+    padding: 24vh 10% 10% 50vw;
+}
+.recyclable-page .content {
+    padding: 20vh 10% 10% 48%;
+}
+
+.content h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    color: var(--color-primary);
+}
+.content h6 {
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+}
+.content p {
+    font-size: 1rem;
+    color: black;
+}
+.content a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.btn-primary {
+    margin-top: 30px;
+    background: linear-gradient(
+        to top,
+        var(--color-btn-primary) 0%,
+        var(--color-btn-secondary) 100%
+    );
+    color: white;
+    box-shadow: 4px 5px 14px -4px var(--color-btn-primary);
+    padding: 5px 20px;
+    font-weight: 600;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+section {
+    position: relative;
+}
+
+.indicator {
+    position: absolute;
+    top: 4%;
+    left: 4%;
+    color: gray;
+    font-size: 44px !important;
+}
+.icon-home {
+    cursor: pointer;
+}
+.next_prev {
+    font-weight: bold !important;
+    font-size: 30px !important;
+    cursor: pointer;
+}
+
+/* Home Page */
+.home-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-page .content {
+    background-image: url("../images/logos/line.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 822px;
+    height: 670px;
+    /* background: rgb(193, 247, 139); */
+}
+.home-page .content .line {
+    /* position: absolute; */
+}
+
+.home-center {
+    /* position: absolute; */
+    /* top: 30%; */
+    -webkit-animation: scale 2s; /* Chrome, Safari, Opera */
+    animation: scale 2s;
+}
+.home-logos {
+    position: absolute;
+}
+
+.forest {
+    bottom: -20%;
+    left: -11%;
+    -webkit-animation: opacity 2s; /* Chrome, Safari, Opera */
+    animation: opacity 2s;
+}
+.fsctm {
+    top: 16%;
+    left: -10%;
+    -webkit-animation: opacity 2s; /* Chrome, Safari, Opera */
+    animation: opacity 2s;
+}
+.aluminumfree {
+    top: -16%;
+    left: 31%;
+    -webkit-animation: opacity 3s; /* Chrome, Safari, Opera */
+    animation: opacity 3s;
+}
+.co2 {
+    top: 16%;
+    right: -9%;
+    -webkit-animation: opacity 4s; /* Chrome, Safari, Opera */
+    animation: opacity 4s;
+}
+.recyclable {
+    bottom: -20%;
+    right: -6%;
+    -webkit-animation: opacity 5s; /* Chrome, Safari, Opera */
+    animation: opacity 5s;
+}
+
+.zoom-out {
+    animation: zoomOut 5s ease;
+}
+/* All animation */
+
+/* All Page transaction */
+@keyframes zoomOut {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(2);
+    }
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes scale {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* @keyframes forest {
+    from {
+        bottom: 0;
+        left: 0;
+        transform: scale(0);
+    }
+    to {
+        bottom: -20%;
+        left: -11%;
+        transform: scale(1);
+    }
+} */
