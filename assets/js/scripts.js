@@ -82,6 +82,7 @@ $( document ).ready(function() {
         // Change the content
         removeAllBackgroundImage();
         section.addClass("home-page-bg");
+        $(".page-content").addClass("hide");
     }
     function forest() {
         let section = $("#section-2");
@@ -94,6 +95,8 @@ $( document ).ready(function() {
         // Change the content
         removeAllBackgroundImage();
         section.addClass("forest-page-bg");
+        $(".page-content").addClass("hide");
+        $(".forest-page-content").removeClass("hide");
     }
     function fsctm() {
         let section = $("#section-2");
@@ -106,6 +109,9 @@ $( document ).ready(function() {
         // Change the content
         removeAllBackgroundImage();
         section.addClass("fsc-page-bg");
+        $(".page-content").addClass("hide");
+        $(".fsc-page-content").removeClass("hide");
+
     }
     function aluminumfree() {
         let section = $("#section-2");
@@ -120,6 +126,8 @@ $( document ).ready(function() {
         // Change the content
         removeAllBackgroundImage();
         section.addClass("aluminum-free-page-bg");
+        $(".page-content").addClass("hide");
+        $(".aluminum-free-page-content").removeClass("hide");
     }
     function co2() {
         let section = $("#section-2");
@@ -132,6 +140,8 @@ $( document ).ready(function() {
         // Change the content
         removeAllBackgroundImage();
         section.addClass("co2-page-bg");
+        $(".page-content").addClass("hide");
+        $(".co2-page-content").removeClass("hide");
     }
     function recyclable() {
         let section = $("#section-2");
@@ -144,6 +154,8 @@ $( document ).ready(function() {
         // Change the content
         removeAllBackgroundImage();
         section.addClass("recyclable-page-bg");
+        $(".recyclable-content").addClass("hide");
+        $(".forest-page-content").removeClass("hide");
     }
 
     function showAllArrow() {
@@ -164,4 +176,18 @@ $( document ).ready(function() {
         let section = $("#section-2");
         section.removeClass("home-page-bg forest-page-bg fsc-page-bg aluminum-free-page-bg co2-page-bg recyclable-page-bg");
     }
+
+    // button click
+    $(".btn-fsctm").on("click",()=>{
+        fsctm();
+    });
+    $(".btn-Alu-free").on("click",()=>{
+        aluminumfree();
+    });
+    $(".btn-co2").on("click",()=>{
+        co2();
+    });
+    $(".btn-recyclable").on("click",()=>{
+        recyclable();
+    });
 });

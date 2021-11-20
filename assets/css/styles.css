@@ -28,7 +28,7 @@ html {
 }
 
 .screen {
-    position: absolute;
+    /* position: absolute; */
     width: 100vw;
     height: 100vh;
 }
@@ -41,16 +41,14 @@ html {
     background-size: cover;
 }
 
-/* Section-1 envelope */
+/* Section-1 */
 .envelope-page {
     /* background-image: url("/assets/images/bgs/Home.png"); */
 }
 /* Section-2 home-page */
 .home-page-bg {
-    /* z-index: 100; */
     background-image: url("../images/bgs/home.png");
 }
-
 /* Section-3  */
 .forest-page-bg {
     background-image: url("../images/bgs/forest_based_materials.png");
@@ -73,7 +71,7 @@ html {
 }
 
 /* Section paddings */
-.forest-page .content {
+/* .forest-page .content {
     padding: 10% 10% 10% 40%;
 }
 .fsc-page .content {
@@ -87,6 +85,10 @@ html {
 }
 .recyclable-page .content {
     padding: 20vh 10% 10% 48%;
+} */
+
+.content {
+    position: absolute;
 }
 
 .content h1 {
@@ -106,6 +108,11 @@ html {
 .content a {
     color: blue;
     text-decoration: underline;
+}
+
+.forest-page-content {
+    padding: 10% 10% 10% 40%;
+    top: 0;
 }
 
 .btn-primary {
@@ -133,6 +140,7 @@ section {
     left: 4%;
     color: gray;
     font-size: 44px !important;
+    z-index: 100;
 }
 .icon-home {
     cursor: pointer;
@@ -149,7 +157,7 @@ section {
     justify-content: center;
     align-items: center;
 }
-.home-page .content {
+.home-page .content-home {
     background-image: url("../images/logos/line.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -162,9 +170,6 @@ section {
     height: 670px;
     /* background: rgb(193, 247, 139); */
 }
-.home-page .content .line {
-    /* position: absolute; */
-}
 
 .home-center {
     /* position: absolute; */
@@ -174,6 +179,7 @@ section {
 }
 .home-logos {
     position: absolute;
+    cursor: pointer;
 }
 
 .forest {
