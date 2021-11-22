@@ -116,7 +116,7 @@ $( document ).ready(function() {
     function aluminumfree() {
         let section = $("#section-2");
         section.find(".content")
-            .css('transform','scale(1.2) translate(5vw, 70vh)')
+            .css('transform','scale(1.2) translate(4vw, 65vh)')
             .addClass("animation-smooth");
             // .css('opacity',0)
             // .css({"-webkit-transform":"translate(100px,100px)"})
@@ -154,8 +154,8 @@ $( document ).ready(function() {
         // Change the content
         removeAllBackgroundImage();
         section.addClass("recyclable-page-bg");
-        $(".recyclable-content").addClass("hide");
-        $(".forest-page-content").removeClass("hide");
+        $(".page-content").addClass("hide");
+        $(".recyclable-page-content").removeClass("hide");
     }
 
     function showAllArrow() {

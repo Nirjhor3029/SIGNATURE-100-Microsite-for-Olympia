@@ -86,6 +86,30 @@ html {
 .recyclable-page .content {
     padding: 20vh 10% 10% 48%;
 } */
+.page-content {
+    -webkit-animation: opacity 3s; /* Chrome, Safari, Opera */
+    animation: opacity 3s;
+}
+.forest-page-content {
+    padding: 10% 10% 10% 40%;
+    top: 0;
+}
+.fsc-page-content {
+    padding: 10% 10% 10% 40%;
+    top: 0;
+}
+.aluminum-free-page-content {
+    padding: 10% 40% 10% 10%;
+    top: 0;
+}
+.co2-page-content {
+    padding: 24vh 10% 10% 50vw;
+    top: 0;
+}
+.recyclable-page-content {
+    padding: 20vh 10% 10% 48%;
+    top: 0;
+}
 
 .content {
     position: absolute;
@@ -108,11 +132,6 @@ html {
 .content a {
     color: blue;
     text-decoration: underline;
-}
-
-.forest-page-content {
-    padding: 10% 10% 10% 40%;
-    top: 0;
 }
 
 .btn-primary {
